@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- GitHub Settings Page Screenshot -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="60" fill="#24292e"/>
+  <circle cx="40" cy="30" r="15" fill="#586069"/>
+  <text x="70" y="35" fill="white" font-family="Arial" font-size="14">Settings</text>
+  
+  <!-- Sidebar -->
+  <rect x="0" y="60" width="200" height="540" fill="#f6f8fa"/>
+  <text x="20" y="90" fill="#586069" font-family="Arial" font-size="12">Public profile</text>
+  <text x="20" y="115" fill="#586069" font-family="Arial" font-size="12">Account</text>
+  <text x="20" y="140" fill="#586069" font-family="Arial" font-size="12">Appearance</text>
+  <text x="20" y="165" fill="#0366d6" font-family="Arial" font-size="12" font-weight="bold">Emails</text>
+  <text x="20" y="190" fill="#586069" font-family="Arial" font-size="12">Password and authentication</text>
+  
+  <!-- Main Content -->
+  <rect x="200" y="60" width="600" height="540" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="230" y="100" fill="#24292e" font-family="Arial" font-size="24" font-weight="bold">Emails</text>
+  
+  <!-- Description -->
+  <text x="230" y="130" fill="#586069" font-family="Arial" font-size="14">Emails you can use to sign in to your account. Verified emails can be used as the author or committer addresses for web-based Git operations,</text>
+  <text x="230" y="150" fill="#586069" font-family="Arial" font-size="14">e.g. edits and merges.</text>
+  
+  <!-- Email List -->
+  <rect x="230" y="170" width="540" height="60" fill="#f6f8fa" stroke="#d1d5da" stroke-width="1"/>
+  <text x="250" y="195" fill="#24292e" font-family="Arial" font-size="14">fengyehao@ucloud.cn</text>
+  <rect x="400" y="185" width="60" height="20" fill="#28a745" rx="3"/>
+  <text x="415" y="197" fill="white" font-family="Arial" font-size="10">Verified</text>
+  
+  <rect x="230" y="240" width="540" height="60" fill="#f6f8fa" stroke="#d1d5da" stroke-width="1"/>
+  <text x="250" y="265" fill="#24292e" font-family="Arial" font-size="14">ued@ucloud.cn</text>
+  <rect x="350" y="255" width="50" height="20" fill="#0366d6" rx="3"/>
+  <text x="365" y="267" fill="white" font-family="Arial" font-size="10">Primary</text>
+  <rect x="410" y="255" width="60" height="20" fill="#28a745" rx="3"/>
+  <text x="425" y="267" fill="white" font-family="Arial" font-size="10">Verified</text>
+  <text x="250" y="285" fill="#586069" font-family="Arial" font-size="12">This email address is the default for GitHub notifications, such as replies to issues, pull requests, and similar activity.</text>
+  
+  <!-- Add Email Section -->
+  <text x="230" y="330" fill="#24292e" font-family="Arial" font-size="16" font-weight="bold">Add email address</text>
+  <rect x="230" y="340" width="300" height="30" fill="white" stroke="#d1d5da" stroke-width="1"/>
+  <text x="240" y="358" fill="#586069" font-family="Arial" font-size="14">Email address</text>
+  <rect x="540" y="340" width="60" height="30" fill="#28a745" rx="3"/>
+  <text x="560" y="358" fill="white" font-family="Arial" font-size="12">Add</text>
+  
+  <!-- Privacy Section -->
+  <rect x="230" y="400" width="540" height="120" fill="#fff5b4" stroke="#d4ac0d" stroke-width="1" rx="5"/>
+  <text x="250" y="425" fill="#24292e" font-family="Arial" font-size="14" font-weight="bold">Keep my email addresses private</text>
+  <circle cx="720" cy="420" r="8" fill="#d1d5da"/>
+  <text x="250" y="445" fill="#735c0f" font-family="Arial" font-size="12">We'll remove your public profile email and use 49426641+UCloudDocs@users.noreply.github.com when performing web-based Git</text>
+  <text x="250" y="460" fill="#735c0f" font-family="Arial" font-size="12">operations (e.g. edits and merges) and sending email on your behalf. If you want command line Git operations to use your private email</text>
+  <text x="250" y="475" fill="#735c0f" font-family="Arial" font-size="12">you must set your email in Git.</text>
+  <text x="250" y="500" fill="#735c0f" font-family="Arial" font-size="12">Previously authored commits associated with a public email will remain public.</text>
+</svg>

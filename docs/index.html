@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub 文档管理手册</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="GitHub 文档仓库管理完整指南">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    .sidebar {
+      padding-top: 6px;
+    }
+    
+    .sidebar > h1 {
+      margin: 0 auto 1rem;
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-align: center;
+    }
+    
+    .sidebar > h1 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    .sidebar > h1 .app-name-link {
+      display: block;
+    }
+    
+    .markdown-section {
+      max-width: 80%;
+    }
+    
+    .cover.show {
+      display: block;
+    }
+    
+    .cover .cover-main {
+      flex: 1;
+      margin: -20px 16px 0;
+      text-align: center;
+      position: relative;
+    }
+    
+    .cover h1 {
+      color: #2c3e50;
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin: 0.625rem 0 2.5rem;
+      position: relative;
+      text-align: center;
+    }
+    
+    .cover h1 small {
+      bottom: -0.4375rem;
+      font-size: 1rem;
+      position: absolute;
+    }
+    
+    .cover blockquote {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    
+    .cover .cover-main > p:last-child a {
+      border-radius: 2rem;
+      border: 1px solid #42b983;
+      box-sizing: border-box;
+      color: #42b983;
+      display: inline-block;
+      font-size: 1.05rem;
+      letter-spacing: 0.1rem;
+      margin: 0.5rem 1rem;
+      padding: 0.75em 2rem;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    
+    .cover .cover-main > p:last-child a:last-child {
+      background-color: #42b983;
+      color: #fff;
+    }
+    
+    .cover .cover-main > p:last-child a:last-child:hover {
+      background-color: #369970;
+      color: #fff;
+    }
+    
+    .cover .cover-main > p:last-child a:hover {
+      color: #369970;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">加载中...</div>
+  <script>
+    window.$docsify = {
+      name: 'GitHub 文档管理手册',
+      repo: https://github.com//,
+      basePath: '/docs_new/test_new/',
+      homepage: 'README.md',
+      loadSidebar: true,
+      loadNavbar: false,
+      mergeNavbar: true,
+      maxLevel: 4,
+      subMaxLevel: 3,
+      auto2top: true,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '🔍 搜索文档',
+        noData: '😞 找不到结果',
+        depth: 6
+      },
+      copyCode: {
+        buttonText: '📋 复制代码',
+        errorText: '❌ 复制失败',
+        successText: '✅ 复制成功'
+      },
+      pagination: {
+        previousText: '⬅️ 上一页',
+        nextText: '下一页 ➡️',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      count: {
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese'
+      },
+      coverpage: false,
+      onlyCover: false,
+      themeColor: '#42b983',
+      alias: {},
+      notFoundPage: true,
+      relativePath: true,
+      routerMode: 'hash'
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 搜索插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- 代码复制插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <!-- 分页插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+  <!-- 字数统计插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
+  <!-- 代码高亮 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+</body>
+</html>
