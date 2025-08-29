@@ -12,7 +12,6 @@
   * [⚡ 高级功能](05-advanced-features.md)
   * [🤖 AI 辅助编辑](06-ai-editing.md)
   * [💻 本地编辑](07-local-editing.md)
-  * [📸 截图规范](08-screenshot-guide.md)
 
 * Management
   * [🛡️ 权限职责](08-responsibilities.md)
