@@ -15,7 +15,6 @@
 2. 点击"Sign up"注册
 3. 使用UCloud邮箱完成注册流程
 
-![注册页面](images/signup.png)
 
 ### Step 2: 申请仓库权限
 
