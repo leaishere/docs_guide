@@ -492,7 +492,7 @@ docs/
    ![描述](images/screenshot.png)
    
    # 上级目录的图片
-   ![描述](../images/diagram.png)
+   ![描述](images/diagram.png)
    ```
 
 2. **路径检查清单**
@@ -1043,6 +1043,452 @@ curl -I https://github.com
 - [Markdown教程](https://markdown.com.cn/)
 - [GitHub使用指南](https://guides.github.com/)
 - [技术写作指南](https://developers.google.com/tech-writing)
+
+---
+
+## 🎓 快速入门常见问题
+
+### Q: 完全没有技术基础可以学会吗？
+
+**A: 完全可以学会**
+
+我们的指南专门为非技术人员设计：
+- **零基础友好**：每个步骤都有详细的图文说明
+- **渐进式学习**：从最基础的操作开始，逐步深入
+- **实际案例**：提供大量实际操作示例
+- **持续支持**：遇到问题可以随时寻求帮助
+
+建议学习路径：
+1. 先完成快速入门指南
+2. 实际操作几次加深印象
+3. 遇到问题及时查阅FAQ
+4. 逐步尝试更高级的功能
+
+### Q: 学习需要多长时间？
+
+**A: 分阶段掌握**
+
+**基础操作（1-2天）**：
+- 文档的创建、编辑、保存
+- 基本的Markdown语法
+- 简单的格式调整
+
+**熟练使用（1-2周）**：
+- 复杂格式和布局
+- 图片和媒体插入
+- 协作和版本管理
+
+**高级应用（1个月）**：
+- 自定义样式和主题
+- 高级功能配置
+- 流程优化和最佳实践
+
+记住：**实践是最好的老师**，建议边学边做。
+
+## 📁 仓库管理常见问题
+
+### Q: 如何将本地仓库与远程仓库关联？
+
+**A: 关联步骤**
+
+```bash
+# 1. 初始化本地仓库
+git init
+
+# 2. 添加远程仓库地址
+git remote add origin [仓库URL]
+
+# 3. 验证关联
+git remote -v
+
+# 4. 首次推送
+git push -u origin main
+```
+
+### Q: 仓库结构混乱怎么办？
+
+**A: 重新整理结构**
+
+1. **制定整理计划**
+   - 分析现有文件和目录
+   - 设计新的目录结构
+   - 制定文件迁移计划
+
+2. **执行整理操作**
+   - 创建新的目录结构
+   - 批量移动和重命名文件
+   - 更新所有内部链接
+
+3. **验证和测试**
+   - 检查所有链接是否正常
+   - 测试导航菜单功能
+   - 确认文档显示正常
+
+## 📝 文档创建进阶问题
+
+### Q: 如何批量导入现有文档？
+
+**A: 批量导入方法**
+
+#### 方法一：使用GitHub网页端
+
+1. **准备文档**
+   - 将所有文档转换为Markdown格式
+   - 确保文件名符合规范
+   - 整理目录结构
+
+2. **批量上传**
+   - 在GitHub仓库中选择"Upload files"
+   - 拖拽多个文件或文件夹
+   - 等待上传完成
+
+#### 方法二：使用Git命令行
+
+```bash
+# 1. 克隆仓库到本地
+git clone [仓库URL]
+
+# 2. 将文档复制到本地仓库目录
+cp -r /path/to/docs/* ./docs/
+
+# 3. 添加并提交
+git add .
+git commit -m "批量导入现有文档"
+git push origin main
+```
+
+### Q: 如何设置文档模板？
+
+**A: 模板设置方法**
+
+1. **创建模板文件**
+   - 在仓库根目录创建`.github/ISSUE_TEMPLATE/`目录
+   - 或在docs目录创建`templates/`目录
+
+2. **定义模板内容**
+   ```markdown
+   # 文档标题
+
+   ## 概述
+   [简要描述文档内容]
+
+   ## 详细说明
+   [详细的操作步骤或说明]
+
+   ## 相关资源
+   - [相关链接1](URL)
+   - [相关链接2](URL)
+
+   ## 更新记录
+   - 创建时间：[日期]
+   - 最后更新：[日期]
+   - 更新人：[姓名]
+   ```
+
+## 🔧 高级功能疑难解答
+
+### Q: 如何实现文档内容的版本控制？
+
+**A: 版本控制策略**
+
+#### Git分支策略
+
+```bash
+# 1. 创建开发分支
+git checkout -b dev
+
+# 2. 在开发分支进行编辑
+# 进行文档修改...
+
+# 3. 提交到开发分支
+git add .
+git commit -m "更新文档内容"
+
+# 4. 切换到主分支并合并
+git checkout main
+git merge dev
+
+# 5. 推送到远程
+git push origin main
+```
+
+#### 版本标记
+
+```bash
+# 创建版本标签
+git tag -a v1.0 -m "文档版本 1.0"
+git push origin v1.0
+
+# 查看所有版本
+git tag -l
+```
+
+### Q: 如何配置自定义主题？
+
+**A: 主题自定义步骤**
+
+1. **创建自定义CSS**
+   ```css
+   /* custom.css */
+   :root {
+     --theme-color: #42b883;
+     --text-color-base: #2c3e50;
+     --text-color-secondary: #7f8c8d;
+   }
+
+   .sidebar {
+     background: var(--theme-color);
+   }
+
+   .content {
+     color: var(--text-color-base);
+   }
+   ```
+
+2. **配置docsify加载自定义样式**
+   ```html
+   <!-- index.html -->
+   <link rel="stylesheet" href="assets/css/custom.css">
+   ```
+
+3. **测试和调整**
+   - 本地预览效果
+   - 调整颜色和布局
+   - 确保兼容性
+
+## 🤖 AI编辑功能问题
+
+### Q: AI生成的内容不够准确怎么办？
+
+**A: 提升AI内容质量**
+
+#### 优化输入指令
+
+**明确具体的要求**：
+```markdown
+❌ 不好的指令：写一个用户指南
+✅ 好的指令：为新用户编写GitHub文档创建的步骤指南，包含截图说明和常见问题解决方案
+```
+
+**提供充足的上下文**：
+- 说明目标用户群体
+- 指定内容的详细程度
+- 明确文档的使用场景
+- 提供相关的参考资料
+
+#### 分步骤优化
+
+1. **初步生成**：使用基础指令生成框架
+2. **细节完善**：针对具体章节提供详细指令
+3. **事实核查**：验证技术细节和操作步骤
+4. **格式调整**：确保符合项目的格式规范
+
+### Q: 如何让AI生成的指令更具体？
+
+**A: 指令优化技巧**
+
+#### 使用SMART原则
+
+- **Specific（具体）**：明确要做什么
+- **Measurable（可衡量）**：设定明确的标准
+- **Achievable（可实现）**：确保要求合理
+- **Relevant（相关）**：与项目目标相关
+- **Time-bound（有时限）**：设定完成时间
+
+#### 示例对比
+
+**优化前**：
+```
+帮我写文档
+```
+
+**优化后**：
+```
+为软件产品经理编写GitHub Pages文档发布指南，要求：
+1. 包含完整的操作步骤（15-20个步骤）
+2. 每个步骤都要有截图说明
+3. 针对可能遇到的3-5个常见问题提供解决方案
+4. 使用简洁易懂的语言，避免过多技术术语
+5. 整体篇幅控制在2000-3000字
+```
+
+## 💻 本地编辑深度问题
+
+### Q: Git克隆速度太慢怎么解决？
+
+**A: 克隆加速方法**
+
+#### 使用镜像源
+
+```bash
+# 使用GitHub镜像
+git clone https://github.com.cnpmjs.org/[用户名]/[仓库名].git
+
+# 或者使用码云镜像（如果有同步）
+git clone https://gitee.com/[用户名]/[仓库名].git
+```
+
+#### 浅克隆
+
+```bash
+# 只克隆最近的提交历史
+git clone --depth 1 [仓库URL]
+
+# 后续如需完整历史
+git fetch --unshallow
+```
+
+#### 配置代理（如果网络环境需要）
+
+```bash
+# HTTP代理
+git config --global http.proxy http://127.0.0.1:1080
+
+# HTTPS代理
+git config --global https.proxy https://127.0.0.1:1080
+
+# 取消代理
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
+
+### Q: Typora中图片显示异常？
+
+**A: 图片显示问题解决**
+
+#### 检查图片路径
+
+1. **相对路径问题**
+   ```markdown
+   ❌ 错误：![图片](../images/test.png)
+   ✅ 正确：![图片](images/test.png)
+   ```
+
+2. **文件名问题**
+   ```markdown
+   ❌ 避免：中文文件名.png
+   ✅ 推荐：english-filename.png
+   ```
+
+#### Typora设置优化
+
+**图片设置**：
+1. 文件 → 偏好设置 → 图像
+2. 选择"复制图片到指定路径"
+3. 设置路径为：`./images`
+4. 启用"优先使用相对路径"
+
+**显示设置**：
+1. 视图 → 显示 → 显示图片
+2. 确保图片预览功能已启用
+3. 检查图片格式兼容性
+
+### Q: 本地修改Push失败？
+
+**A: Push失败解决方案**
+
+#### 常见错误类型
+
+**错误1：权限被拒绝**
+```bash
+# 错误信息：Permission denied (publickey)
+# 解决方案：配置SSH密钥
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+**错误2：分支冲突**
+```bash
+# 错误信息：Updates were rejected
+# 解决方案：先拉取再推送
+git pull origin main
+git push origin main
+```
+
+**错误3：文件过大**
+```bash
+# 错误信息：file size exceeds GitHub's limit
+# 解决方案：使用Git LFS
+git lfs track "*.png"
+git add .gitattributes
+git add large-file.png
+git commit -m "Add large file with LFS"
+```
+
+## 🔐 权限和职责问题
+
+### Q: 团队成员权限分配原则？
+
+**A: 权限分配策略**
+
+#### 权限层级设计
+
+**管理员（Admin）**：
+- 仓库设置和配置
+- 成员邀请和权限管理
+- 分支保护规则设置
+- 敏感操作审批
+
+**编辑者（Write）**：
+- 创建和编辑文档
+- 提交和推送更改
+- 创建分支和PR
+- 参与代码审查
+
+**查看者（Read）**：
+- 查看所有文档
+- 下载和克隆仓库
+- 提交Issue和反馈
+- 参与讨论
+
+#### 权限分配建议
+
+```markdown
+1. **项目负责人**：Admin权限
+2. **核心编辑团队**：Write权限
+3. **内容审核人员**：Write权限
+4. **一般用户**：Read权限
+5. **临时协作者**：临时Write权限
+```
+
+### Q: 如何监控文档质量？
+
+**A: 质量监控体系**
+
+#### 质量检查清单
+
+**内容质量**：
+- [ ] 信息准确性验证
+- [ ] 逻辑结构清晰
+- [ ] 语言表达规范
+- [ ] 示例代码正确
+
+**格式质量**：
+- [ ] Markdown语法正确
+- [ ] 图片链接有效
+- [ ] 内部链接正常
+- [ ] 样式统一一致
+
+**用户体验**：
+- [ ] 导航结构合理
+- [ ] 搜索功能正常
+- [ ] 加载速度正常
+- [ ] 移动端适配
+
+#### 自动化检查工具
+
+```bash
+# 链接检查
+npm install -g markdown-link-check
+markdown-link-check docs/**/*.md
+
+# 拼写检查
+npm install -g cspell
+cspell "docs/**/*.md"
+
+# 格式检查
+npm install -g markdownlint-cli
+markdownlint docs/**/*.md
+```
 
 ---
 
