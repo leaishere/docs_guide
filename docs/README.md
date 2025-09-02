@@ -21,6 +21,8 @@
 - [截图规范](08-screenshot-guide.md) - 高质量截图制作
 
 ## 🍽️食用建议
+> 发布前，建议对照[《文档创建检查清单》](13-appendix?id=📋-文档创建检查清单)进行发布前自检。确保：内容完整、预览正常
+
 ### 👶 完全新手
 按顺序操作：**[完成上述5个步骤](01-getting-started.md)** → **[仓库结构详解](02-repository-structure.mddd)** → **[创建第一个文档](03-create-docs.md)**
 
