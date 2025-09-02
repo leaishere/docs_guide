@@ -1,6 +1,6 @@
 # GitHub 文档管理手册（2025版）
 
-欢迎来到 2025 版文档中心。本版为重构后的 01-13 全流程学习路径，适合新同学从零开始快速上手，并逐步掌握仓库管理、发布、模板、规范与排障等能力。
+欢迎来到 2025 版文档中心。本版为重构后的 01-14 全流程学习路径，适合新同学从零开始快速上手，并逐步掌握仓库管理、发布、模板、规范与排障等能力。
 
 ## 📚 文档导航
 
@@ -27,13 +27,14 @@
 - [文档预览地址](https://cms-docs.ucloudadmin.com/)
 - [文档发布地址](https://cms-docs.ucloudadmin.com/ucpublishnew.html)
 - [产品上线/下线/改名流程](https://ones.dml.ucloud.cn/wiki/#/team/BVSybaCU/space/PnULfhek/page/94Q7USUA) - 存量产品下线可用，新产品上线oa会自动通知平台新建仓库
+---
 
 ## 🍽️食用建议
 > 发布前，建议对照[《文档创建检查清单》](13-appendix?id=📋-文档创建检查清单)进行发布前自检。确保：内容完整、预览正常
 
 日常维护，请根据需要选择对应章节进行查询、辅助：
 ### 👶 完全新手
-按顺序操作：[完成上述5个步骤](01-getting-started.md) → [仓库结构详解](02-repository-structure.mddd) → [创建第一个文档](03-create-docs.md)
+按顺序操作：[完成上述5个步骤](01-getting-started.md) → [仓库结构详解](02-repository-structure.md) → [创建第一个文档](03-create-docs.md)
 
 ### 🔄 有经验用户
 直接查看：[高级功能使用](05-advanced-features.md) → [模板与范例](11-templates.md) → [常见问题FAQ](10-faq.md)
@@ -41,6 +42,7 @@
 ### 🚨 遇到问题
 优先查看：[常见问题FAQ](10-faq.md) → **故障排除指南** → 联系平台负责人
 
+---
 ## 📞 获取帮助
 
 - **平台产品经理**：李安
