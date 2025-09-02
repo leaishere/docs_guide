@@ -60,34 +60,34 @@
 
 ```
 * 概览与入门
-  * 产品概览 (/docs_guide/01-getting-started.md)
-  * 术语与限制 (/docs_guide/13-appendix.md)
-  * 快速开始 (/docs_guide/01-getting-started.md#快速开始)
+  * 产品概览 (/仓库名/01-getting-started.md)
+  * 术语与限制 (/仓库名/13-appendix.md)
+  * 快速开始 (/仓库名/01-getting-started.md#快速开始)
   * 常见问题
-    * 无法登录控制台？ (/docs_guide/10-faq.md#无法登录控制台)
-    * 首次接入失败？ (/docs_guide/10-faq.md#首次接入失败)
+    * 无法登录控制台？ (/仓库名/10-faq.md#无法登录控制台)
+    * 首次接入失败？ (/仓库名/10-faq.md#首次接入失败)
 * 安装与配置
-  * 开通与计费 (/docs_guide/03-create-docs.md#开通与计费)
-  * 身份与权限 (/docs_guide/02-repository-guide.md#权限与角色)
-  * CLI/SDK 安装 (/docs_guide/05-advanced-features.md#cli-与-sdk)
+  * 开通与计费 (/仓库名/03-create-docs.md#开通与计费)
+  * 身份与权限 (/仓库名/02-repository-guide.md#权限与角色)
+  * CLI/SDK 安装 (/仓库名/05-advanced-features.md#cli-与-sdk)
   * 常见问题
-    * SDK 初始化报错？ (/docs_guide/10-faq.md#sdk-初始化报错)
+    * SDK 初始化报错？ (/仓库名/10-faq.md#sdk-初始化报错)
 * 使用指南
   * 核心任务 A (…)
   * 核心任务 B (…)
   * 常见问题
-    * 功能 A 结果异常？ (/docs_guide/10-faq.md#功能-a-结果异常)
+    * 功能 A 结果异常？ (/仓库名/10-faq.md#功能-a-结果异常)
 * 运维与监控
   * 日志与审计 (…)
   * 监控与告警 (…)
   * 故障排查 (…)
 * 最佳实践 (…)
-* FAQ 汇总 (/docs_guide/10-faq.md)
-* 版本与变更日志 (/docs_guide/12-changelog.md)
-* 附录与下载 (/docs_guide/13-appendix.md)
+* FAQ 汇总 (/仓库名/10-faq.md)
+* 版本与变更日志 (/仓库名/12-changelog.md)
+* 附录与下载 (/仓库名/13-appendix.md)
 ```
 
-> 注意：示例中的“/docs_guide/”为当前仓库名称；在你的项目中请替换为“/你的仓库名称/”。
+> 注意：示例中的“/仓库名/”为仓库名称占位；在你的项目中请替换为实际的仓库名称。
 
 > 提示：第三层条目尽量控制在 3–5 个高频问题，其余集中放在 10-faq.md 的正文中。
 
