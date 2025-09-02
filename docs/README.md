@@ -20,6 +20,14 @@
 - [权限与职责](09-responsibilities.md) - 仓库管理者须知
 - [截图规范](08-screenshot-guide.md) - 高质量截图制作
 
+### 🧰 常用地址
+- [公共图床](suploader.ucloudadmin.com)
+- [仓库管理员登记表](https://ones.dml.ucloud.cn/wiki/#/team/BVSybaCU/space/PnULfhek/page/6zwqSBpV)
+- [Github文档仓库目录](https://github.com/UCloudDoc-Team) 
+- [文档预览地址](https://cms-docs.ucloudadmin.com/)
+- [文档发布地址](https://cms-docs.ucloudadmin.com/ucpublishnew.html)
+- [产品上线/下线/改名流程](https://ones.dml.ucloud.cn/wiki/#/team/BVSybaCU/space/PnULfhek/page/94Q7USUA) - 存量产品下线可用，新产品上线oa会自动通知平台新建仓库
+
 ## 🍽️食用建议
 > 发布前，建议对照[《文档创建检查清单》](13-appendix?id=📋-文档创建检查清单)进行发布前自检。确保：内容完整、预览正常
 
