@@ -706,8 +706,8 @@ docs/
     * [认证接口](api/auth.md)
     * [用户接口](api/users.md)
   * SDK文档
-    * [JavaScript SDK](sdk/javascript.md)
-    * [Python SDK](sdk/python.md)
+    * JavaScript SDK（占位示例）
+    * Python SDK（占位示例）
 ```
 
 #### 菜单设计最佳实践
@@ -1492,4 +1492,4 @@ markdownlint docs/**/*.md
 
 ---
 
-💡 **提示**：如果本FAQ没有解决您的问题，请通过 [技术支持](../support/contact.md) 联系我们。
+💡 **提示**：如果本FAQ没有解决您的问题，请前往首页的「获取帮助」查看联系方式（README.md#-获取帮助）。
