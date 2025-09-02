@@ -17,6 +17,7 @@
 * Management
   * [🛡️ 权限职责](08-responsibilities.md)
   * [📸 截图规范](09-screenshot-guide.md)
+  * [✍️ 写作高质量文档](14-content-quality.md)
   
 * FAQ & References
   * [❓ 常见问题大全](10-faq.md)
