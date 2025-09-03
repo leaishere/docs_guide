@@ -104,19 +104,18 @@ flowchart TD
    - 需要的权限级别
 
 2. **提交申请**
-   - 联系项目负责人或管理员
-   - 填写权限申请表（如有）
-   - 提供必要的身份验证
+   - 更新[仓库管理员登记表](https://ones.dml.ucloud.cn/wiki/#/team/BVSybaCU/space/PnULfhek/page/6zwqSBpV)并联系管理员@李安
 
 3. **等待审核**
-   - 管理员审核申请
-   - 可能需要额外的验证
-   - 审核通过后发送邀请
+   - 管理员审核申请并更新仓库管理员
+   - 仓库管理权限更新后，Github平台会发送邀请邮件
 
 4. **接受邀请**
    - 检查邮箱收到的邀请邮件
    - 点击邮件中的接受链接
    - 确认权限生效
+
+> 确保Github已登录后再点击激活邮件链接。确定目标仓库编辑态下，提交按钮显示「Commit」则表示仓库管理权限已获得。
 
 ### Q: 权限不足无法编辑文档？
 
@@ -171,6 +170,7 @@ flowchart TD
 2. 使用预览功能检查格式
 3. 添加必要的元数据和标题
 ```
+> 完整教程查看[创建文档](03-create-docs.md)
 
 **Step 4: 提交文件**
 ```
@@ -179,6 +179,8 @@ flowchart TD
 3. 选择提交到主分支或创建新分支
 4. 点击 "Commit new file"
 ```
+>提交后记得前往[预览页面](https://cms-docs.ucloudadmin.com/)查看更新是否生效。确认生效才可以[发布](https://cms-docs.ucloudadmin.com/ucpublishnew.html)
+
 
 #### 文件命名规范
 
@@ -248,9 +250,10 @@ docs/
 ```
 1. 登录GitHub账号
 2. 进入 Settings > Emails
-3. 确保邮箱已验证
-4. 设置为主邮箱（Primary）
+3. 确保UCloud邮箱是主邮箱（Primary）
+4. 确保“Keep Private”取消勾选
 ```
+> 因为udocs发布权限通过ucloud邮箱关联github和cms平台，因此要保证主邮箱公开可验证
 
 **Step 2: 进行首次提交**
 ```
@@ -305,22 +308,18 @@ docs/
    - 确认Markdown语法无误
    ```
 
-#### 发布状态检查
+#### 发布失败怎么办？
 
-**检查构建状态**
+**提示：合规问题**
 ```
-1. 访问仓库主页
-2. 点击 "Actions" 标签
-3. 查看最新的工作流运行状态
-4. 如有错误，点击查看详细日志
+平台发布前默认会调合规部门敏感词库进行预检，但是不同敏感词的处理方式可有不同。看到提示后请联系合规同时@朱珠，更新后方可继续发布。
 ```
 
-**检查Pages设置**
+**提示：pdf生成**
 ```
-1. 进入仓库 Settings
-2. 滚动到 "Pages" 部分
-3. 确认源分支设置正确
-4. 检查自定义域名配置（如有）
+因为pdf是基于预览环境html渲染后自动抓取生成的，因此在发布后需要等候1-5分钟才可生成。
+若报错尚未生成，请前往[文档预览地址](https://cms-docs.ucloudadmin.com/)确认文档右上角「…」悬停呼出的“pdf”按钮点击后是否内容显示正常。
+显示正常才可继续发布。
 ```
 
 ### Q: 如何预览文档效果？
@@ -329,13 +328,12 @@ docs/
 
 #### 在线预览
 
-1. **GitHub预览**
+1. **GitHub预览：属于及编及看，用于检测基础MD语法是否书写正确**
    - 在文件页面点击 "Preview" 标签
    - 查看基本的Markdown渲染效果
    - 注意：不包含自定义样式
 
-2. **发布预览**
-   - 访问GitHub Pages的URL
+2. **[CMS预览](https://cms-docs.ucloudadmin.com/)**：cms环境样式与线上一致，cms预览正常后发布，线上显示才可正常
    - 查看完整的发布效果
    - 包含所有样式和功能
 
@@ -485,17 +483,17 @@ docs/
 
 1. **相对路径规则**
    ```markdown
-   # 当前目录下的图片
-   ![描述](image.png)
-   
    # images文件夹中的图片
    ![描述](images/screenshot.png)
-   
-   # 上级目录的图片
-   ![描述](images/diagram.png)
    ```
 
-2. **路径检查清单**
+2. **绝对路径规则**
+   ```markdown
+   # 使用图床地址的绝对路径
+   ![描述](https://图床地址/路径/图片.png)
+   ```
+
+3. **路径检查清单**
    ```markdown
    □ 文件路径是否正确
    □ 文件名大小写是否匹配
@@ -659,21 +657,22 @@ docs/
 * [产品概览](overview.md)
 
 * Getting started
-  * [快速上手](getting-started/quick-start.md)
-  * [基础配置](getting-started/basic-config.md)
-  * [常见问题](getting-started/faq.md)
+  * [快速上手](/仓库名/quick-start.md)
+  * [基础配置](/仓库名/basic-config.md)
+  * [常见问题](/仓库名/faq.md)
 
 * User Guidebook
-  * [功能介绍](user-guide/features.md)
-  * [操作指南](user-guide/operations.md)
-  * [最佳实践](user-guide/best-practices.md)
+  * [功能介绍](/仓库名/features.md)
+  * [操作指南](/仓库名/operations.md)
+  * [最佳实践](/仓库名/best-practices.md)
 
 * FAQ
-  * [常见问题](faq/common-issues.md)
-  * [故障排除](faq/troubleshooting.md)
+  * [常见问题](/仓库名/common-issues.md)
+  * [故障排除](/仓库名/troubleshooting.md)
 
-* [更新日志](changelog.md)
+* [更新日志](/仓库名/changelog.md)
 ```
+> 由于方案架构问题，_sidebar.md相对路径需要以/仓库名/开头
 
 ### Q: 如何创建多级菜单？
 
