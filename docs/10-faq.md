@@ -606,28 +606,30 @@ docs/
 2. **文件内容检查**
    ```markdown
    ✅ 正确格式：
-   * [首页](README.md)
-   * [快速开始](getting-started.md)
-     * [安装指南](installation.md)
-     * [配置说明](configuration.md)
-   
+   * [首页](/仓库名/README.md)
+   * [快速开始](/仓库名/getting-started.md)
+     * [安装指南](/仓库名/installation.md)
+     * [配置说明](/仓库名/configuration.md)
+   > 仓库名前面的/不要丢
+
    ❌ 错误格式：
-   - [首页](README.md)  # 使用了-而不是*
-   *[快速开始](getting-started.md)  # 缺少空格
+   - [首页](仓库名/README.md)  # 使用了-而不是*
+   *[快速开始](/getting-started.md)  # 缺少空格
    * [安装指南] (installation.md)  # 空格位置错误
    ```
 
 3. **路径检查**
    ```markdown
    ✅ 正确路径：
-   * [文档](docs/guide.md)
-   * [API](api/reference.md)
+   * [文档](/仓库名/guide.md)
+   * [API](/仓库名/reference.md)
    
    ❌ 错误路径：
    * [文档](/docs/guide.md)  # 绝对路径
    * [文档](./docs/guide.md)  # 不必要的./
    * [文档](docs\guide.md)  # 错误的路径分隔符
    ```
+> 跨产品跳转请使用线上文档中心的绝对地址
 
 #### 常见sidebar问题
 
@@ -654,8 +656,8 @@ docs/
 ```markdown
 <!-- _sidebar.md -->
 
-* [产品概览](README.md)
-+ * [产品概览](README.md)
+* [产品概览]
+* [产品概览](/仓库名/README.md)
 
 * Getting started
   * [快速上手](/仓库名/quick-start.md)
