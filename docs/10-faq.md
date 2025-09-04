@@ -208,7 +208,7 @@ flowchart TD
 docs/
 ├── README.md                 # 项目首页
 ├── _sidebar.md              # 导航菜单
-├── overview.md              # 产品概览
+├── README.md              # 产品概览
 ├── getting-started/         # 入门指南
 │   ├── quick-start.md
 │   ├── installation.md
@@ -654,7 +654,8 @@ docs/
 ```markdown
 <!-- _sidebar.md -->
 
-* [产品概览](overview.md)
+* [产品概览](README.md)
++ * [产品概览](README.md)
 
 * Getting started
   * [快速上手](/仓库名/quick-start.md)
@@ -690,7 +691,7 @@ docs/
 #### 实际示例
 
 ```markdown
-* [产品介绍](overview.md)
+* [产品介绍](README.md)
 
 * 用户指南
   * 基础功能

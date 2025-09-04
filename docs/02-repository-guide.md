@@ -7,7 +7,7 @@
 ```
 您的产品仓库/
 ├── _sidebar.md          # 左侧导航菜单
-├── overview.md          # 产品概览页面
+├── README.md          # 产品概览页面
 ├── images/              # 图片资源文件夹
 │   ├── screenshot1.png
 │   └── diagram.jpg
@@ -48,7 +48,7 @@
 
 ![图标设置](images/class-9070488.png)
 
-### 2. overview.md - 产品概览页
+### 2. README.md - 产品概览页
 
 **作用**：作为文档首页，提供产品整体介绍
 
@@ -59,7 +59,7 @@
 - 快速链接
 
 **命名说明**：
-- 使用`overview.md`是为了避免与原有`index.md`重名
+- 推荐使用`README.md`作为文档首页
 - 您可以自由命名，只要保证文件名唯一性
 
 ### 3. images/ - 图片资源文件夹
