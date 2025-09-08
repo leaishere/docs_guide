@@ -49,7 +49,6 @@
 
 **示例格式**：
 ```markdown
-<div class="sidebar_title icon__产品名"> 产品名称</div>
 <!-- 空行不要删除！！！ -->
 * [概览](/产品名/README)
 * 产品简介
