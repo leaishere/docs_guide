@@ -33,7 +33,6 @@
 
 **基本格式**：
 ```markdown
-<div class="sidebar_title icon__uhost"> 云主机 UHost</div>
 <!-- 空行不要删除！！！ -->
 * [概览](/uhost/README)
 * 产品简介
@@ -41,12 +40,7 @@
     * [产品优势](/uhost/introduction/advantages)
 ```
 
-**🎨 添加产品图标**：
-- 在首行class中填入产品icon名称（如：`icon_ulb`）
-- 图标库地址：[控制台图标库](https://console-font.pre.ucloudadmin.com/www/preview)
-- 需要在**产品文档**和**API文档**的sidebar文件中都添加
-
-![图标设置](images/class-9070488.png)
+> 产品图标如何添加：若控制台产品已有icon则联系@汪林添加。若没有则提交ones视觉需求并@冯逸琪安排视觉设计后再联系平台侧添加。
 
 ### 2. README.md - 产品概览页
 
