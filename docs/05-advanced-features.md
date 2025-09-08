@@ -144,7 +144,7 @@ curl -X POST \
 
 3. **示例配置**
    ```html
-   <div class="sidebar_title icon__uhost"> 云主机 UHost</div>
+   
    ```
 
 **注意事项**：
