@@ -8,33 +8,55 @@
 
 **使用场景**：展示多种配置方式、不同平台的操作步骤等
 
-**语法格式**：
+**语法格式1**：
 ```html
-<tabs>
-<tab name="标签1">
+<!-- tabs:start -->
 
-标签1的内容...
+#### **English**
 
-</tab>
-<tab name="标签2">
+Hello!
 
-标签2的内容...
+#### **French**
 
-</tab>
-</tabs>
+Bonjour!
+
+#### **Italian**
+
+Ciao!
+
+<!-- tabs:end -->
+
+```
+**语法格式2**：
+```html
+<!-- tabs:start -->
+
+<!-- tab:English -->
+
+Hello!
+
+<!-- tab:French -->
+
+Bonjour!
+
+<!-- tab:Italian -->
+
+Ciao!
+
+<!-- tabs:end -->
+
 ```
 
 **实际示例**：
 ```html
-<tabs>
-<tab name="控制台操作">
+<!-- tabs:start -->
+<!-- tab:控制台操作 -->
 
 1. 登录UCloud控制台
 2. 进入产品页面
 3. 点击创建按钮
 
-</tab>
-<tab name="API调用">
+<!-- tab:API调用 -->
 
 ```bash
 curl -X POST \
@@ -42,12 +64,10 @@ curl -X POST \
   -H 'Content-Type: application/json'
 ```
 
-</tab>
-</tabs>
+<!-- tabs:end -->
 ```
 
 **注意事项**：
-- tab标签内容前后必须有空行
 - 支持在tab内使用所有Markdown语法
 - 标签名称要简洁明了
 
