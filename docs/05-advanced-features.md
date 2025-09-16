@@ -72,39 +72,20 @@ curl -X POST \
 - 标签名称要简洁明了
 
 ### 💡 提示样式
+#### 一般提示：
 
-**使用场景**：重要提醒、注意事项、警告信息等
+- 适用于：与上下文内容有关的**重要信息**，需用户注意
+- 语法： > 此处有一个一般提示文案 
 
-#### 信息提示
-```html
-<div class="alert alert-info">
-<strong>信息：</strong>这是一条信息提示
-</div>
-```
+#### 	帮助提示：
+* 适用于：对产品使用提供帮助说明，阅读本提示可以**提升用户在产品使用上的效率**
+* 语法： ?> 此处有一个一般提示文案 
 
-#### 成功提示
-```html
-<div class="alert alert-success">
-<strong>成功：</strong>操作已完成
-</div>
-```
-
-#### 警告提示
-```html
-<div class="alert alert-warning">
-<strong>警告：</strong>请注意以下事项
-</div>
-```
-
-#### 错误提示
-```html
-<div class="alert alert-danger">
-<strong>错误：</strong>操作失败，请检查配置
-</div>
-```
+#### 告警提示：
+* 适用于：向用户说明操作风险和操作限制，忽略本提示可能给用户造成**实质性损失**
+* 语法： !> 此处有一个一般提示文案 
 
 ### 🔗 超链接样式
-
 #### 基础链接
 ```markdown
 [链接文字](https://链接地址)
@@ -131,62 +112,7 @@ curl -X POST \
 ```
 
 ### 📋 内容目录
-
 **自动生成目录**：平台支持自动抓取文章内的二级标题生成目录
-
-**手动目录**：
-```markdown
-## 目录
-- [章节1](#章节1)
-- [章节2](#章节2)
-  - [子章节2.1](#子章节21)
-  - [子章节2.2](#子章节22)
-```
-
-## 🎯 图标功能
-
-### 🖼️ 产品图标设置
-
-**功能说明**：在左侧导航栏显示产品图标
-
-**设置步骤**：
-
-1. **查找图标**
-   - 访问[图标库](https://console-font.pre.ucloudadmin.com/www/preview)
-   - 找到对应的产品图标
-   - 记录图标名称（如：`icon_ulb`）
-
-2. **配置图标**
-   在`_sidebar.md`文件首行添加：
-   ```html
-   <div class="sidebar_title icon__产品图标名"> 产品名称</div>
-   ```
-
-3. **示例配置**
-   ```html
-   
-   ```
-
-**注意事项**：
-- 需要在**产品文档**和**API文档**的sidebar中都添加
-- 图标名称格式：`icon__` + 图标名
-- 确保图标名称正确，否则不显示
-
-![图标设置示例](images/class-9070488.png)
-
-### 🎨 图标使用技巧
-
-#### 常用产品图标
-- 云主机：`icon__uhost`
-- 负载均衡：`icon__ulb`
-- 云数据库：`icon__udb`
-- 对象存储：`icon__ufile`
-
-#### 图标显示问题排查
-1. 检查图标名称是否正确
-2. 确认class格式是否准确
-3. 验证图标库中是否存在该图标
-4. 清除缓存重新加载
 
 ## 🔧 代码高亮
 
@@ -305,57 +231,18 @@ sudo apt-get install nginx
 |:-------|:--------:|-------:|
 | 内容1  |   内容2  |  内容3 |
 ```
+> 单元格内换行，markdown不支持。只能手动写<br></br>实现
 
-### 🎨 表格样式
-
-```html
-<table class="table table-striped">
-<thead>
-<tr>
-<th>列标题1</th>
-<th>列标题2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>内容1</td>
-<td>内容2</td>
-</tr>
-</tbody>
-</table>
-```
 
 ## 🔄 收起展开功能
 
 **使用场景**：长内容折叠、可选内容隐藏
 
 ```html
-<details>
-<summary>点击展开详细内容</summary>
-
-这里是折叠的内容...
-
-可以包含任何Markdown语法。
-
+<details> 
+<summary>展开详情</summary> 
+<pre><code> 仓库根目录下的sidebar.md用于定义页面左边栏导航，修改文档内目录顺序来自定义文章排序。 </code></pre> 
 </details>
-```
-
-## 📱 响应式设计
-
-### 📐 图片响应式
-
-```html
-<img src="images/example.png" alt="示例图片" style="max-width: 100%; height: auto;">
-```
-
-### 📊 表格响应式
-
-```html
-<div class="table-responsive">
-<table class="table">
-<!-- 表格内容 -->
-</table>
-</div>
 ```
 
 ---
