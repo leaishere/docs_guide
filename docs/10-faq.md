@@ -484,7 +484,7 @@ docs/
 1. **相对路径规则**
    ```markdown
    # images文件夹中的图片
-   ![描述](images/screenshot.png)
+   ![描述](/images/screenshot.png)
    ```
 
 2. **绝对路径规则**
@@ -545,13 +545,13 @@ docs/
 
 ```markdown
 # 基本图片
-![图片描述](images/example.png)
+![图片描述](/images/example.png)
 
 # 带链接的图片
-[![图片描述](images/example.png)](https://example.com)
+[![图片描述](/images/example.png)](https://example.com)
 
 # 指定图片大小（HTML语法）
-<img src="images/example.png" alt="图片描述" width="500">
+<img src="/images/example.png" alt="图片描述" width="500">
 ```
 
 #### 图片居中和样式
@@ -559,26 +559,26 @@ docs/
 ```html
 <!-- 居中显示 -->
 <div align="center">
-  <img src="images/example.png" alt="图片描述" width="600">
+  <img src="/images/example.png" alt="图片描述" width="600">
 </div>
 
 <!-- 带边框的图片 -->
-<img src="images/example.png" alt="图片描述" style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;">
+<img src="/images/example.png" alt="图片描述" style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;">
 
 <!-- 响应式图片 -->
-<img src="images/example.png" alt="图片描述" style="max-width: 100%; height: auto;">
+<img src="/images/example.png" alt="图片描述" style="max-width: 100%; height: auto;">
 ```
 
 #### 图片说明文字
 
 ```markdown
-![配置界面截图](images/config-screen.png)
+![配置界面截图](/images/config-screen.png)
 *图1：系统配置界面，显示了主要的配置选项*
 
 ---
 
 <div align="center">
-  <img src="images/architecture.png" alt="系统架构图" width="800">
+  <img src="/images/architecture.png" alt="系统架构图" width="800">
   <br>
   <em>图2：系统整体架构图</em>
 </div>
@@ -1421,8 +1421,8 @@ git config --global --unset https.proxy
 
 1. **相对路径问题**
    ```markdown
-   ❌ 错误：![图片](../images/test.png)
-   ✅ 正确：![图片](images/test.png)
+   ❌ 错误：![图片](..//images/test.png)
+   ✅ 正确：![图片](/images/test.png)
    ```
 
 2. **文件名问题**

@@ -15,7 +15,7 @@
 2. 找到您的产品文档
 3. 点击"**[预览地址](https://cms-docs.ucloudadmin.com/)**"按钮
 
-![预览页面](images/image-20200113184021386.png)
+![预览页面](/images/image-20200113184021386.png)
 
 ### 💡 预览最佳实践
 - **每次编辑后**都要预览检查
@@ -84,8 +84,8 @@
    - 在Emails设置页面
    - **取消勾选**"Keep my email addresses private"
    
-   ![邮箱设置](images/setting.png)
-   ![取消私有](images/keep-private-new.png)
+   ![邮箱设置](/images/setting.png)
+   ![取消私有](/images/keep-private-new.png)
 
 #### Step 2: 确认仓库权限
 

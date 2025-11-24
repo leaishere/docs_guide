@@ -55,7 +55,7 @@
 4. 选择本地存储路径
 5. 点击"Clone"开始克隆
 
-![克隆仓库](images/githubclone_2.png)
+![克隆仓库](/images/githubclone_2.png)
 
 #### 方式二：通过URL克隆
 1. 在GitHub网页上找到您的仓库
@@ -64,7 +64,7 @@
 4. 选择"URL"标签页，粘贴链接
 5. 选择本地路径并克隆
 
-![复制仓库地址](images/github_clone1.png)
+![复制仓库地址](/images/github_clone1.png)
 
 ### Step 3: 配置Typora
 
@@ -82,7 +82,7 @@
 3. 设置路径为：`./images`
 4. 勾选"对本地位置的图片应用上述规则"
 
-![图片配置](images/picinimages-2673746.png)
+![图片配置](/images/picinimages-2673746.png)
 
 **配置效果**：
 - 拖拽图片到文档时自动复制到images文件夹
@@ -110,14 +110,14 @@
 2. 右键选择"用Typora打开"或直接拖拽到Typora
 3. 在Typora中开启文件树视图：**视图** → **侧边栏** → **文件树**
 
-![本地文件](images/localfindfile.png)
+![本地文件](/images/localfindfile.png)
 
 #### Step 4: 编辑文档
 1. 在文件树中选择要编辑的文档
 2. 使用Typora的所见即所得编辑功能
 3. 实时预览编辑效果
 
-![编辑界面](images/editing.png)
+![编辑界面](/images/editing.png)
 
 #### Step 5: 添加图片
 1. 直接拖拽图片到文档中
@@ -132,7 +132,7 @@
 3. 检查所有修改的文件
 4. 预览具体的变更内容
 
-![查看变更](images/githubchange.png)
+![查看变更](/images/githubchange.png)
 
 #### Step 2: 提交变更
 1. 在左下角"Summary"中输入提交说明
@@ -154,7 +154,7 @@
 3. 填写PR描述
 4. 请求审核或直接合并到master
 
-![推送变更](images/githubpush.png)
+![推送变更](/images/githubpush.png)
 
 ## 🎯 高效编辑技巧
 
