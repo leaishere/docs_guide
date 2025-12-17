@@ -20,7 +20,7 @@
 - [权限与职责](08-responsibilities.md) - 仓库管理者须知
 
 ### 🧰 常用地址
-- [公共图床](suploader.ucloudadmin.com)
+- [公共图床](https://suploader.ucloudadmin.com/upload)
 - [仓库管理员登记表](https://ones.dml.ucloud.cn/wiki/#/team/BVSybaCU/space/PnULfhek/page/6zwqSBpV)
 - [Github文档仓库目录](https://github.com/UCloudDoc-Team) 
 - [文档预览地址](https://cms-docs.ucloudadmin.com/)

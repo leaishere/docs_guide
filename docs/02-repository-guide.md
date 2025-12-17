@@ -66,7 +66,7 @@
 ```
 
 #### 方式二：绝对地址引用
-使用图床服务，[详细说明](http://docs.ucloudadmin.com/5b10f62667ded1519074449f/edit)
+使用图床服务：[公共图床](https://suploader.ucloudadmin.com/upload)
 
 ![图片管理](/images/屏幕快照 2019-11-01 下午6.48.25.png)
 
